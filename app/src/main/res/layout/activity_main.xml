@@ -46,6 +46,13 @@
             android:layout_margin="10dp"
             android:text="跳转2"
             android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_camera3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="跳转3"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <ImageView

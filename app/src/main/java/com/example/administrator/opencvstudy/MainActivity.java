@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //原始Bitmap、处理后的Bitmap
     private Bitmap mOriginalBitmap,mDealBitmap;
     //选择图片、处理
-    private Button mBtnChoose, mBtnDeals, btnCamera, btnCamera2;
+    private Button mBtnChoose, mBtnDeals, btnCamera, btnCamera2,btnCamera3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +46,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnDeals = findViewById(R.id.btn_deals);
         btnCamera = findViewById(R.id.btn_camera);
         btnCamera2 = findViewById(R.id.btn_camera2);
+        btnCamera3 = findViewById(R.id.btn_camera3);
 
         mBtnDeals.setOnClickListener(this);
         mBtnChoose.setOnClickListener(this);
         btnCamera.setOnClickListener(this);
         btnCamera2.setOnClickListener(this);
+        btnCamera3.setOnClickListener(this);
 
     }
 
@@ -72,6 +74,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.btn_camera2: {//跳转2
                 startActivity(new Intent(this,CameraHandleActivity.class));
+                break;
+            }
+            case R.id.btn_camera3: {//跳转3
+                startActivity(new Intent(this,FdActivity.class));
                 break;
             }
         }

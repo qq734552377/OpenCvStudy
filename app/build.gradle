@@ -12,7 +12,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++11 -frtti -fexceptions"
-                arguments '-DANDROID_STL=gnustl_shared'   //支持C++异常处理标准模板快
+//                arguments '-DANDROID_STL=gnustl_shared'   //支持C++异常处理标准模板快
             }
         }
     }
